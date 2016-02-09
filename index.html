@@ -1,11 +1,17 @@
 ---
-layout: default
-title: 我的Blog
+title: Lennon Du's Blog
 ---
-　　<h2>{{ page.title }}</h2>
-　　<p>最新文章</p>
-　　<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-　　　　{% endfor %}
-　　</ul>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="lenon" href="http://7xqtok.com1.z0.glb.clouddn.com/icon-du.ico"/>
+</head>
+<body>
+    <h1 align="center">Be a Learner!</h1>
+    <hr/>
+{% include footer.html %}
+</body>
+</html>
