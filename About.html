@@ -1,14 +1,37 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        #portrait{
+            padding: 15px;
+        }
+        #wechat{
+            padding:7px;
+        }
+        #email{
+            padding:7px;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div>
-        <img src="http://7xqtok.com1.z0.glb.clouddn.com/touxiang.jpg" height="150" width="150">
-        <p>Wechat:lennondu</p>
-        <p>Email:lennonxiong@gmail.com</p>
+    <div style="text-align: center;font-size: xx-large;margin-top: 19px;margin-bottom: 19px">
+        <a href="index.html">首页</a>
     </div>
+    <hr/>
+    <div style="margin-top: 10%;margin-bottom: 10%">
+        <div id="portrait" style="text-align: center">
+            <img src="http://7xqtok.com1.z0.glb.clouddn.com/touxiang.jpg" height="150" width="150">
+        </div>
+
+        <div id="wechat" style="text-align: center">Wechat:lennondu</div>
+        <div id="email" style="text-align: center">Email:lennonxiong@gmail.com</div>
+    </div>
+    {% include footer.html %}
 </body>
 </html>

@@ -12,6 +12,15 @@ title: Lennon Du's Blog
 <body>
     <h1 align="center">Be a Learner!</h1>
     <hr/>
+    <div style="">
+        <ul style="text-align: center;list-style-type: none">
+            {% for post in site.posts %}
+            <li style="display: inline">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% include footer.html %}
 </body>
 </html>
