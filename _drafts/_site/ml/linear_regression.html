@@ -1,0 +1,32 @@
+<h1 id="linear-regression">Linear Regression</h1>
+
+<h3 id="section">数学符号规范</h3>
+
+<p>$\mathbf{x}_j$   第$j$维特征
+$x$ 一条样本的特征变量 $x=(1,x_1,x_2,…,x_n)^T$ 
+$x^{(i)}$ 第$i$条样本
+$x_j^{(i)}$ 第$i$条样本的第$j$维特征
+$y^{(i)}$ 第$i$条样本的结果
+$\mathbf{X}$ 所有样本的特征合集， $\mathbf{X}=[x^{(1)},x^{(2)},…,x^{(n)}]^T$ $X\in \mathbf{R}^{n\times (p+1)}$
+$y$ 所有样本的标签合集， $y=[y^{(1)},y^{(2)},…,y^{(n)}]^T$
+$w$ 参数向量 $w=(w_0,w_1,…,w_p)$
+$w_j$ 第$j$维参数</p>
+
+<h1 id="section-1">线性回归</h1>
+
+<script type="math/tex; mode=display">H(x) = \mathbf{X}\cdot w^T</script>
+
+<p><script type="math/tex">obj: Min\ Error=(y-X\cdot w^T)^T\bullet (y-X\cdot w^T)</script>
+同样 $Error = \sum^n_{i=1}(y^{(i)}-w\cdot x^{(i)})^2$
+这是一个无约束条件下的最优化问题，
+###解法一：梯度下降法（Gradient Based Descent Method）
+<script type="math/tex">Set\quad J(w)=\frac{1}{2n}\sum^n_{i=1}(y^{(i)}-w\cdot x^{(i)})^2</script>
+<script type="math/tex">Grad(w_i)=\frac{\partial J}{\partial w_i}=\frac1n\sum^n_{i=1}(w\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}\quad i\in(1,2,\ldots,n)</script>
+<script type="math/tex">Grad(w_0)=\frac{\partial J}{\partial w_0}=\frac{1}{n}\sum_{i=1}^{n}(w\cdot x^{(i)}-y^{(i)})</script></p>
+
+<p>repeat until convergence{
+    <script type="math/tex">w_0 = w_0 -\alpha\times Grad(w_0)</script>
+    <script type="math/tex">w_i=w_i-\alpha\times Grad(w_i) i\in (1,2,\ldots,n)</script>
+}
+$\alpha$表示学习率</p>
+
