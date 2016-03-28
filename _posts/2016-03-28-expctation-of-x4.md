@@ -1,11 +1,11 @@
 ---
 layout: post
 title: E(x^4)
-permalink: /math/E(x^4)
+permalink: /math/E(x4)
 category: math
 ---
 
-# $\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^4e^{-\frac{x^2}{2}}dx$
+# What is the value of $\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^4e^{-\frac{x^2}{2}}dx$
 
 This is one way to compute the $E(x^4)$ when $x\sim N(0,1)$
 
