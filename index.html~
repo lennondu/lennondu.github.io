@@ -1,1 +1,24 @@
-Hello World
+---
+title: Lennon Du's Blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="lenon" href="http://7xqtok.com1.z0.glb.clouddn.com/icon-du.ico"/>
+</head>
+<body>
+    <h1 align="center">Be a Learner!</h1>
+    <hr/>
+    <div style="">
+        {% for post in site.posts %}
+        <div style="text-align: center;margin-bottom: 10px;">
+            <a href="{{ post.url }}" style="text-decoration: none">{{ post.title }}</a>
+        </div>
+        {% endfor %}
+    </div>
+{% include footer.html %}
+</body>
+</html>
