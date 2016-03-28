@@ -5,9 +5,9 @@ category: Machine Learning Algorithm
 permalink: ml/linear_regression
 ---
 
-#Linear Regression
+# Linear Regression
 
-###数学符号规范
+### 数学符号规范
 
 $$
 \begin{array}{c|l}
@@ -23,7 +23,7 @@ w_j & 第j维参数 \\
 \end{array}
 $$
 
-#线性回归
+# 线性回归
 
 $$H(x) = X\cdot w^T$$
 
@@ -31,7 +31,7 @@ $$obj: Min\ Error=(y-X\cdot w^T)^T\bullet (y-X\cdot w^T)$$
 同样 $Error = \sum^n_{i=1}(y^{(i)}-w\cdot x^{(i)})^2$
 这是一个无约束条件下的最优化问题
 
-###解法一：梯度下降法（Gradient Based Descent Method）
+### 解法一：梯度下降法（Gradient Based Descent Method）
 
 
 $$Set\quad J(w)=\frac{1}{2n}\sum^n_{i=1}(y^{(i)}-w\cdot x^{(i)})^2$$
