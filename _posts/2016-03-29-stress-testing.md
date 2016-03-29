@@ -1,3 +1,9 @@
+---
+layout: post
+title: stress testing
+permalink: cs/stress-testing
+category: cs
+---
 # Stress Testing
 
 压力测试是用在有一个完全正确的算法以及一个有缺陷的算法时所采用的暴力求出缺陷的方式。
