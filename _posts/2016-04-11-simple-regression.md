@@ -1,8 +1,8 @@
 ---
 layout: post
-title: simple regression
+title: Simple Regression
 permalink: /ml/simple-regression
-category: machine learning
+category: Machine Learning Algorithm
 ---
 
 # Simple Regression
