@@ -49,7 +49,7 @@ $$w_i=w_i-\alpha\times Grad(w_i) i\in (1,2,\ldots,n)$$
 
 $\alpha$表示学习率
 
-###　解法二：解析解法(Close Form Solution)
+### 解法二：解析解法(Close Form Solution)
 
 $$ Grad(w_i)=-2X(y-X^T \cdot w) $$
 
