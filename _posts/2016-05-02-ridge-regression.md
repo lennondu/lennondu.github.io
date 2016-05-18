@@ -9,9 +9,9 @@ permalink: ml/ridge_regression
 
 Ridge regression is linear regression with regularization.
 
-$$obj:Error= \sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})^2+\lambda||w||_2$$
+$$obj:Error= \sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})^2+\lambda||w||_2^2$$
 
-Also, $Error=(y-X^T\cdot w)^T\cdot (y-X^T\cdot w)+\lambda \|\|w\|\|_2$
+Also, $Error=(y-X^T\cdot w)^T\cdot (y-X^T\cdot w)+\lambda \|\|w\|\|_2^2$
 
 But there is one thing to be aware. We only penalty $w_i \quad i \in {0,1,2...p}$ when we do standarization for every feature. On the other hand, we will not penalty $w_0$.
 
