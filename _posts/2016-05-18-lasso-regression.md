@@ -1,3 +1,10 @@
+---
+layout: post
+title: Lasso Regression
+category: Machine Learning Algorithm
+permalink: ml/lasso_regression
+---
+
 # Lasso Regression
 
 $$obj: Error = \sum_{i=1}^{n}(y^{(i)}-w^T \cdot x^{(i)})^2+\lambda \|\|w\|\|_1$$
