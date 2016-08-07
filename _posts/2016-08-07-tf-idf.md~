@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Linear Regression
+title: TF-IDF
 category: Machine Learning Algorithm
-permalink: ml/linear_regression
+permalink: ml/tf_idf
 ---
 
 ##TF-IDF
