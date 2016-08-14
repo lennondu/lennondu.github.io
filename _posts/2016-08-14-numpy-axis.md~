@@ -1,3 +1,10 @@
+---
+layout: post
+title: Numpy axis
+category: python
+permalink: python/numpy_axis
+---
+
 # Numpy axis
 
 This article aims to illustrate the axis in numpy's function by some examples.
