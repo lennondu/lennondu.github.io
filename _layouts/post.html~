@@ -31,8 +31,8 @@
 	});
 	</script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-    <link rel="stylesheet" href="http://lennon.github.io/assets/highlight/styles/default.min.css">
-    <script src="http://lennon.github.io/assets/highlight/highlight.pack.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
     <script type="text/javascript">
         hljs.initHighlightingOnLoad();
     </script>
