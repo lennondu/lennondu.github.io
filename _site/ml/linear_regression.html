@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            font-family:'Times New Roman',"Microsoft YaHei","微软雅黑";
+        }
+    </style>
+    <link rel="shortcut icon" href="http://7xqtok.com1.z0.glb.clouddn.com/icon-du.ico">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea','pre']
+        }
+      });
+  
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+         for(i=0; i < all.length; i += 1) {
+             all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+	</script>      
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+	</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+<body>
+    <div style="text-align: center;font-size: xx-large;margin-top: 19px;margin-bottom: 19px">
+        <a href="/index.html" style="text-decoration: none">首页</a>
+    </div>
+    <hr/>
+    <div style="width: 50%;margin-left: 25%;">
+        <h1 id="linear-regression">Linear Regression</h1>
+
+<h3 id="section">数学符号规范</h3>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{c|l}
+x_j &  第j维特征 \\
+x & 一条样本的特征变量 x=(1,x_1,x_2,...,x_n)^T \\ 
+x^{(i)} & 第i条样本 \\
+x_j^{(i)} & 第i条样本的第j维特征 \\
+y^{(i)} & 第i条样本的结果 \\
+X & 所有样本的特征合集， X=[x^{(1)},x^{(2)},...,x^{(n)}] \space X\in \mathtt{R}^{n\times (p+1)} \\
+y & 所有样本的标签合集， y=[y^{(1)},y^{(2)},...,y^{(n)}]^T \\
+w & 参数向量 w=(w_0,w_1,...,w_p)^T \\
+w_j & 第j维参数 \\
+\end{array} %]]></script>
+
+<h1 id="section-1">线性回归</h1>
+
+<script type="math/tex; mode=display">H(x) = X^T\cdot w</script>
+
+<p><script type="math/tex">obj: Min\ Error=(y-X^T\cdot w)^T\bullet (y-X^T\cdot w)</script>
+同样 $Error = \sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$</p>
+
+<p>这是一个无约束条件下的最优化问题</p>
+
+<h3 id="gradient-based-descent-method">解法一：梯度下降法(Gradient Based Descent Method)</h3>
+
+<script type="math/tex; mode=display">Set\quad J(w)=\sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2</script>
+
+<script type="math/tex; mode=display">Grad(w_i)=\frac{\partial J}{\partial w_i}=-2\sum^n_{i=1}(w^T\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}\quad i\in(0,1,2,\ldots,n)</script>
+
+<p>Repeat until convergence{</p>
+
+<script type="math/tex; mode=display">w_i=w_i-\alpha\times Grad(w_i) i\in (1,2,\ldots,n)</script>
+
+<p>}</p>
+
+<p>$\alpha$表示学习率</p>
+
+<h3 id="close-form-solution">解法二：解析解法(Close Form Solution)</h3>
+
+<script type="math/tex; mode=display">Grad(w_i)=-2X(y-X^T \cdot w)</script>
+
+<script type="math/tex; mode=display">Set\quad Grad(w_i)=0</script>
+
+<p>Then</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+&-2X(y-X^T \cdot w) =0 \\
+& X\cdot X^T \cdot w = X \cdot y \\
+& w = (X \cdot X^T)^{-1} \cdot X \cdot y 
+\end{align} %]]></script>
+
+
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+        <hr/>
+        <div style="text-align: center">
+            <!---<a href="/Contact.html" >Contact</a>--->
+            <a href="/About.html" style="text-decoration: none" >About</a>
+        </div>
+</body>
+</html>
+</body>
+</html>

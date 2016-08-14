@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            font-family:'Times New Roman',"Microsoft YaHei","微软雅黑";
+        }
+    </style>
+    <link rel="shortcut icon" href="http://7xqtok.com1.z0.glb.clouddn.com/icon-du.ico">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea','pre']
+        }
+      });
+  
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+         for(i=0; i < all.length; i += 1) {
+             all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+	</script>      
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+	</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+<body>
+    <div style="text-align: center;font-size: xx-large;margin-top: 19px;margin-bottom: 19px">
+        <a href="/index.html" style="text-decoration: none">首页</a>
+    </div>
+    <hr/>
+    <div style="width: 50%;margin-left: 25%;">
+        <h1 id="simple-regression">Simple Regression</h1>
+
+<p>Hypothesis: $H(x)=w_0+w_1x$</p>
+
+<p>obj: $min \space E = \sum_1^n{(y_i-(w_0+w_1x_i))^2}$</p>
+
+<h2 id="method-1-form-solution">Method 1: form solution</h2>
+
+<p>This is just for simple regression, matrix form solution will show in mutiple regression.</p>
+
+<p>Let $\frac{\partial{E}}{\partial{w_0}}=0$ and $\frac{\partial{E}}{\partial{w_1}}=0$</p>
+
+<p>联立方程组
+\begin{cases}
+-2\sum_1^n(y_i-w_0-w_1x_i)=0\-2\sum_1^nx_i(y_i-w_0-w_1x_i)=0
+\end{cases}</p>
+
+<p>可推导出
+\begin{cases}
+w_0=\frac{\sum_1^ny_i}{n}-w_1\frac{\sum_1^nx_i}{n}\ \sum_1^nx_iy_i-w_0\sum_1^nx_i-w_1\sum_1^nx_i^2=0
+\end{cases}</p>
+
+<p>结果是
+<script type="math/tex">w_1 = \frac{n\sum_1^nx_iy_i-\sum_1^nx_i\sum_1^ny_i}{n\sum_1^nx_i^2-(\sum_1^nx_i)^2}</script>
+<script type="math/tex">w_0=\frac{\sum_1^ny_i}{n}-w_1\frac{\sum_1^nx_i}{n}</script></p>
+
+<h2 id="method-2-gradient-descent">Method 2: Gradient Descent</h2>
+<p><script type="math/tex">\frac{\partial{E}}{\partial{w_0}}=-2\sum_1^n(y_i-w_0-w_1x_i)</script>
+<script type="math/tex">\frac{\partial{E}}{\partial{w_1}}=-2\sum_1^nx_i(y_i-w_0-w_1x_i)</script></p>
+
+<p>repeat until converge{
+<script type="math/tex">w_0 = w_0+η*2\sum_1^n(y_i-w_0-w_1x_i)</script>
+<script type="math/tex">w_1 = w_1 +η*2\sum_1^nx_i(y_i-w_0-w_1x_i)</script>
+}</p>
+
+<p>η表示是学习率</p>
+
+
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+        <hr/>
+        <div style="text-align: center">
+            <!---<a href="/Contact.html" >Contact</a>--->
+            <a href="/About.html" style="text-decoration: none" >About</a>
+        </div>
+</body>
+</html>
+</body>
+</html>

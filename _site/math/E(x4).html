@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +36,30 @@
     </div>
     <hr/>
     <div style="width: 50%;margin-left: 25%;">
-        {{content}}
+        <h1 id="what-is-the-value-of-frac1sqrt2piint-inftyinftyx4e-fracx22dx">What is the value of $\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^4e^{-\frac{x^2}{2}}dx$</h1>
+
+<p>This is one way to compute the $E(x^4)$ when $x\sim N(0,1)$</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{+\infty}x^4e^{-\frac{x^2}{2}}dx & =\frac{2}{\sqrt{2\pi}}\int_{0}^{+\infty}x^4e^{-\frac{x^2}{2}}dx \\ & \stackrel{t=x^2/2}= \frac{2}{\sqrt{2\pi}}\int_{0}^{+\infty}4t^2e^{-t}d\sqrt{2t} \\ &=\frac{4}{\sqrt\pi}\int_0^{+\infty}t^{3\over2}e^{-t}dt \\ &=\frac{4}{\sqrt\pi}\Gamma(\frac{5}{2}) \\ &=\frac{4}{\sqrt\pi}*\frac{3}{4}\sqrt{\pi}=3\end{align} %]]></script>
+
+<p>The fourth step is a gamma function.s</p>
+
     </div>
-    {% include footer.html %}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+        <hr/>
+        <div style="text-align: center">
+            <!---<a href="/Contact.html" >Contact</a>--->
+            <a href="/About.html" style="text-decoration: none" >About</a>
+        </div>
+</body>
+</html>
 </body>
 </html>

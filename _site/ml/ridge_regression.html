@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            font-family:'Times New Roman',"Microsoft YaHei","微软雅黑";
+        }
+    </style>
+    <link rel="shortcut icon" href="http://7xqtok.com1.z0.glb.clouddn.com/icon-du.ico">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea','pre']
+        }
+      });
+  
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+         for(i=0; i < all.length; i += 1) {
+             all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+	</script>      
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	});
+	</script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+<body>
+    <div style="text-align: center;font-size: xx-large;margin-top: 19px;margin-bottom: 19px">
+        <a href="/index.html" style="text-decoration: none">首页</a>
+    </div>
+    <hr/>
+    <div style="width: 50%;margin-left: 25%;">
+        <h1 id="ridge-regression">Ridge Regression</h1>
+
+<p>Ridge regression is linear regression with regularization.</p>
+
+<script type="math/tex; mode=display">obj:Error= \sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})^2+\lambda||w||_2</script>
+
+<p>Also, $Error=(y-X^T\cdot w)^T\cdot (y-X^T\cdot w)+\lambda |w|_2$</p>
+
+<p>But there is one thing to be aware. We only penalty $w_i \quad i \in {0,1,2…p}$ when we do standarization for every feature. On the other hand, we will not penalty $w_0$.</p>
+
+<h3 id="gradient-descent-method">解法一：梯度下降法(Gradient Descent Method)</h3>
+
+<script type="math/tex; mode=display">\begin{cases}
+Grad(w_i)=-2\sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})x^{(i)}+2\lambda w_i \quad i\in{(1,2,3,p)}\\\
+Grad(w_0)=-2\sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})x^{(i)}
+\end{cases}</script>
+
+<p>Repeat until converage{
+<script type="math/tex">% <![CDATA[
+\begin{align}
+w_i &= w_i+2\sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})x^{(i)}-2\lambda w_i \quad i\in{(1,2,3,p)} \\
+w_0 &= w_0 +2\sum_{i=1}^n(y^{(i)}-w^T\cdot x^{(i)})x^{(i)}
+\end{align} %]]></script>
+}</p>
+
+<h3 id="closed-form-solution">解法二：解析法(Closed Form Solution)</h3>
+
+<p><script type="math/tex">Grad(w_i)=-2X(y-X^T\cdot w)+2\lambda w</script>
+<script type="math/tex">set \quad Grad(w_i)=0</script></p>
+
+<p>Then</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+& -2X(y-X^T\cdot w)+2\lambda w=0 \\
+& (X\cdot X^T+\lambda I^{mod})w=X\cdot y \\
+& w = (X\cdot X^T+\lambda I^{mod})^{-1}\cdot X \cdot y
+\end{align} %]]></script>
+
+<script type="math/tex; mode=display">I^{mod}= \begin{pmatrix}
+0 \quad 0 \quad 0 \quad \cdots \quad 0 \\
+0 \quad 1 \quad 0 \quad \cdots \quad 0 \\
+\vdots \quad \vdots \quad \vdots \quad \ddots \quad \vdots \\
+0 \quad 0 \quad 0 \quad \cdots \quad 1
+\end{pmatrix}</script>
+
+<p>In my view, ridge regression can be called as a machine learning algorithm.</p>
+
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+        <hr/>
+        <div style="text-align: center">
+            <!---<a href="/Contact.html" >Contact</a>--->
+            <a href="/About.html" style="text-decoration: none" >About</a>
+        </div>
+</body>
+</html>
+</body>
+</html>
