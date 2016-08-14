@@ -32,7 +32,7 @@ First, for 2-D array, axis=0 or -2 means vertical, axis=1 or -1 means horizontal
     #36
     data.sum(axis=(-2,1))
     #36
-{% endhightlight %}
+{% endhighlight %}
 As for 3-D array, it is similar but more complex. Test it by yourself.
 
 
