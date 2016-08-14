@@ -17,7 +17,7 @@ Axis or axes along which a sum is performed. The default, axis=None, will sum al
 
 First, for 2-D array, axis=0 or -2 means vertical, axis=1 or -1 means horizontal. If we use tuple, it will sum all the axes.
 <pre>
-<code class='html'>
+<code class='python'>
     data = np.array([
            [0,1,2],
            [3,4,5],
