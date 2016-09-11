@@ -1,3 +1,10 @@
+---
+layout: post
+title: Orange Install
+category: ubuntu
+permalink: others/orange-install
+---
+
 ## Orange Setup
 
 This is a tutorial of Orange in Ubuntu 16.04. For more details, you can go to [official tutorial](http://biolab.github.io/datafusion-installation-guide/).
