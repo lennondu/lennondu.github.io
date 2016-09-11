@@ -13,9 +13,9 @@ This is a tutorial of Orange in Ubuntu 16.04. For more details, you can go to [o
 {% highlight bash linenos %}
     sudo apt-get update
     sudo apt-get install git python-pip python-virtualenv \
-  python3-dev python3-numpy python3-scipy \
-  python3-pyqt4 python-qt4-dev python3-sip-dev libqt4-dev \
-  libgraphviz-dev graphviz 
+        python3-dev python3-numpy python3-scipy \
+        python3-pyqt4 python-qt4-dev python3-sip-dev libqt4-dev \
+        libgraphviz-dev graphviz 
 {% endhighlight %}
 
 There is one thing to note that if you have installed virtualenv by pip, you'd better uninstall that and reinstall it by apt.
