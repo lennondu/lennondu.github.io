@@ -17,7 +17,6 @@ This is a tutorial of Orange in Ubuntu 16.04. For more details, you can go to [o
         python3-pyqt4 python-qt4-dev python3-sip-dev libqt4-dev \
         libgraphviz-dev graphviz
 {% endhighlight %}
-
 There is one thing to note that if you have installed virtualenv by pip, you'd better uninstall that and reinstall it by apt.
 
 In order to keep your environment clean, you'd better use virtual enviroment.
@@ -29,7 +28,6 @@ In order to keep your environment clean, you'd better use virtual enviroment.
     virtualenv -p python3 --system-site-packages orange3env
     source orange3env/bin/active
 {% endhighlight %}
-
 Of course, you can create virtual environment without the parameter --system-site-packages.
 
 *Third*, you can install Orange and its requirements.
@@ -45,7 +43,6 @@ Of course, you can create virtual environment without the parameter --system-sit
     cd orange3-datafusion
     python setup.py develop
 {% endhighlight %}
-
 *Fourth*, you can run it.
 
 {% highlight bash linenos %}
