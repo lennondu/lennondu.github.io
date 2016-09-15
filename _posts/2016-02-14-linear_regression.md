@@ -37,13 +37,13 @@ $$obj: Min\ Error=\frac{1}{2*n}(y-X\cdot w)^T\bullet (y-X\cdot w)$$
 
 $$Set\quad J(w)=\frac{1}{2*n}\sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$$
 
-$$Grad(w_k)=\frac{\partial J}{\partial w_k}=-\frac{1}{n}\sum^n_{i=1}(w^T\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}_{k}\quad k\in(1,2,\ldots,p+1)$$
+$$Grad(w_k)=\frac{\partial J}{\partial w_k}=-\frac{1}{n}\sum^n_{i=1}(w^T\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}_{k}\quad k\in(0,1,2,\ldots,p)$$
 
 
 
 Repeat until convergence{
 
-$$w_k=w_k-\alpha\times Grad(w_k) \space k\in (1,2,\ldots,p+1)$$
+$$w_k=w_k-\alpha\times Grad(w_k) \space k\in (0,1,2,\ldots,p)$$
     
 }
 
