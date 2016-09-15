@@ -27,17 +27,17 @@ $$
 
 $$H(x) = X\cdot w$$
 
-$$obj: Min\ Error=(y-X\cdot w)^T\bullet (y-X\cdot w)$$
-同样 $Error = \sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$
+$$obj: Min\ Error=\frac{1}{2*n}(y-X\cdot w)^T\bullet (y-X\cdot w)$$
+同样 $Error = \frac{1}{2*n}\sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$
 
 这是一个无约束条件下的最优化问题
 
 ### 解法一：梯度下降法(Gradient Based Descent Method)
 
 
-$$Set\quad J(w)=\sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$$
+$$Set\quad J(w)=\frac{1}{2*n}\sum^n_{i=1}(y^{(i)}-w^T\cdot x^{(i)})^2$$
 
-$$Grad(w_k)=\frac{\partial J}{\partial w_k}=-2\sum^n_{i=1}(w^T\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}_{k}\quad k\in(1,2,\ldots,p+1)$$
+$$Grad(w_k)=\frac{\partial J}{\partial w_k}=-\frac{1}{n}\sum^n_{i=1}(w^T\cdot x^{(i)}-y^{(i)})\cdot x^{(i)}_{k}\quad k\in(1,2,\ldots,p+1)$$
 
 
 
