@@ -2,7 +2,7 @@
 layout: post
 title: ERP 初看法
 category: erp
-permalink: erp/erp_thinking
+permalink: erp/erp-thinking
 ---
 
 ## ERP 初看法
